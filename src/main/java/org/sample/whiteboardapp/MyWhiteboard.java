@@ -8,7 +8,6 @@ import jakarta.websocket.OnMessage;
 import jakarta.websocket.Session;
 import jakarta.websocket.server.ServerEndpoint;
 
-// @ServerEndpoint(value = "/whiteboardendpoint")
 @ServerEndpoint(value = "/whiteboardendpoint", encoders = { FigureEncoder.class }, decoders = { FigureDecoder.class })
 public class MyWhiteboard {
 
